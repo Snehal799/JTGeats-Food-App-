@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="main.js" defer></script>
+    <script src="carousel.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+<nav id="LandingPage">
+  <div class="Header">
+    <div class="navbar">
+      <div class="logo">JTGeats</div>  
+      <div class="info">
+        <div class="nav-links">  
+          <span id="Home">Home</span>
+          <span id="About">About</span>
+          <span id="Menu">Menu</span>
+          <span id="Blog">Blog</span>
+          <span id="Contact">Contact</span>
+        </div>
+        <div class="icons"> 
+           <img src="assets/Card.svg" alt="Search Icon" class="search" />
+           <img src="assets/Card1.svg" alt="Cart Icon" class="cart" />
+        </div>  
+      </div>
+    </div>
+  </div>
+
+    <div class="Hero">
+      <div class="text">
+        <div id="t1"> 
+            Authentic Home food in India
+        </div>
+        <div id="t2">
+            JTGeats is a courier service in which authentic home cooked food is delivered to the customer.
+        </div>
+        </div>
+        <div class="searchBar">
+          <input type="text" class="searchInput" placeholder="Search food you love" />
+           <button class="searchBtn">
+            <span class="searchText">Search</span>
+           </button>
+        </div>
+     </div>
+      <img src="assets/cuate.svg" alt="" class="heroImage" />
+
+</nav>
+<div class="KitchenWrapper">
+  <section id="Kitchen"> 
+  <div class="home-kitchen"> <div class="Kitchen-Heading">Home Kitchen</div>
+   <div class="cardsHome"> 
+  <div class="card-grid" id="card-container">
+
+  </div>
+  </div>
+      <div class="carousel-container">
+        <div class="carousel-title">Popular Items</div>
+      <div class="carousel-wrapper">
+        <button class="carousel-button-prev-button">
+          <img src="assets/arrow.svg" alt="Previous" class="arrow-icon" />
+        </button>
+        <div class="carousel-inner" id="carousel-inner">
+
+        </div>
+        <button class="carousel-button-next-button">
+          <img src="assets/arrow.svg" alt="Previous" class="arrow-icon" />
+        </button>
+      </div>
+    </div>
+  </div>
+ </section>
+     <button class="request-dish-btn" id="request-dish-btn"><span class="RequestbtnText">Request a Dish</span></button>
+</div>
+
+     <div class="modal-overlay" id="request-dish-modal">
+    <div class="modal-content">
+      <h3 class="modal-title">Request a New Dish</h3>
+      <p class="modal-description">Enter the details of the dish you'd like to see on our menu.</p>
+      <form class="request-form">
+        <label for="dish-name">Dish Name</label>
+        <input type="text" id="dish-name" name="dish-name" placeholder="E.g., Chicken Alfredo Pasta">
+
+        <label for="dish-description">Description</label>
+        <textarea id="dish-description" name="dish-description" rows="4" placeholder="Describe the dish and any specific ingredients."></textarea>
+      </form>
+      <div class="modal-actions">
+        <button class="modal-btn cancel-btn" id="cancel-btn">Cancel</button>
+        <button class="modal-btn submit-btn" id="submit-btn">Submit Request</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="ServiceSection">
+   <div class="ServiceSectionWrapper">
+  <div class="content">
+    <p class="service-heading">We are providing best<br>home cooked food delivery service.</p>
+    <p class="service-subheading">
+      Away from home and craving the tasty homemade recipes?<br>
+      Choose from a selection of our delicious home cooked dishes.
+    </p>
+  </div>
+  <div class="service-image-container">
+    <video id="service-video" class="service-video" width="100%" height="auto" muted>
+    <source src="assets/3196001-hd_1280_720_25fps.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    <button class="service-play-button">
+  <div class="play-icon-wrapper">
+    <svg class="play-icon" id="video-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path id="svgPath" fill-rule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
+    </svg>
+  </div>
+</button>
+  </div>
+  </div> 
+  <div class="ServiceSectionPartition"></div>
+</section>
+
+<section class="ContactSection">
+  <div class="ContactContent">
+
+    <div class="ContactFormHeadings">
+      <div class="Headings">
+      <div class="FormHeading">Do you have a question<br>or want to become a seller?</div>
+      <div class="ContactSubheading">Fill this form and our manager will contact you next 48 hours.</div>
+      </div>
+       <div class="ContactFormSection">
+      <div class="FormElements">
+      <div class="input-row">
+        <input type="text" placeholder="Your Name" class="input-field">
+        <input type="email" placeholder="Your e-mail" class="input-email">
+      </div>
+      <textarea placeholder="Your message" rows="4" class="textarea-field"></textarea>
+      <button type="submit" class="SubmitButton">
+        <span class="SubmitText">Submit</span>
+      </button>
+      </div>
+      </div>
+    </div>
+
+    <div class="ContactImageSection">
+      <img src="assets/5648472d6c86ab3b01bf19022056e82e44b45640.png" alt="A cartoon delivery person on a scooter" class="contact-image">
+    </div>
+  </div>
+</section>
+
+<footer class="Footer">
+  <div class="FooterWrapper">
+  <div class="FooterMenu">
+      <div class="Footer-logo">JTGeats</div>  
+        <div class="Footer-links">  
+          <span id="Home">Home</span>
+          <span id="About">About</span>
+          <span id="Menu">Menu</span>
+          <span id="Blog">Blog</span>
+          <span id="Contact">Contact</span>
+        </div>
+        <div class="Footer-icons"> 
+          <img src="assets/Facebook.svg" alt="Facebook Icon" class="social-icon" />
+          <img src="assets/iconoir_add-to-cart.svg" alt="Facebook Icon" class="social-icon" />
+        </div>  
+     
+      <div class="Footer-End">
+    <div class="Footer-Line"></div>
+   </div>
+  </div>
+ </div>
+</footer>
+</body>
+</html>
+
+
+
+
